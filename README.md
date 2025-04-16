@@ -25,19 +25,19 @@
 
 ## 🧰 專案結構
 member_system/
--.env              ← 資料庫連線設定（不公開）
--config.py         ← 統一管理 db_config、載入 .env
--init_db.py        ← 建立資料庫與資料表（只跑一次）
--main.py           ← 主程式登入註冊邏輯
--.gitignore        ← 忽略 .env 等敏感資料
--requirements.txt  ← 安裝需要的套件清單
+1. .env              ← 資料庫連線設定（不公開）
+2. config.py         ← 統一管理 db_config、載入 .env
+3. init_db.py        ← 建立資料庫與資料表（只跑一次）
+4. main.py           ← 主程式登入註冊邏輯
+5. .gitignore        ← 忽略 .env 等敏感資料
+6. requirements.txt  ← 安裝需要的套件清單
 
 ---
 
 ## 🖥️ 如何執行
 1. 安裝套件
 2. 建立使用者與資料庫(init_db.py)
-3. 執行主程式(customer_register_login_system)
+3. 執行主程式(main.py)
 
 ---
 
