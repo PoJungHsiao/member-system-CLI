@@ -1,7 +1,8 @@
 # 🔐 CLI 會員系統 - 使用 Python、MySQL、bcrypt
 
 ## 📌 專案簡介
-這是一個以命令列介面（CLI）為基礎的會員系統，提供使用者註冊與登入功能，後端使用 MySQL 資料庫，並透過 `bcrypt` 實作密碼加密，強化帳號資訊的安全性。
+這是一個以命令列介面（CLI）為基礎的會員系統，提供使用者註冊與登入功能，
+後端使用 MySQL 資料庫，並透過 `bcrypt` 實作密碼加密，強化帳號資訊的安全性。
 
 ---
 
@@ -24,12 +25,12 @@
 
 ## 🧰 專案結構
 member_system/
-├── .env              ← 資料庫連線設定（不公開）
-├── config.py         ← 統一管理 db_config、載入 .env
-├── init_db.py        ← 建立資料庫與資料表（只跑一次）
-├── main.py           ← 主程式登入註冊邏輯
-├── .gitignore        ← 忽略 .env 等敏感資料
-└── requirements.txt  ← 安裝需要的套件清單
+.env              ← 資料庫連線設定（不公開）
+config.py         ← 統一管理 db_config、載入 .env
+init_db.py        ← 建立資料庫與資料表（只跑一次）
+main.py           ← 主程式登入註冊邏輯
+.gitignore        ← 忽略 .env 等敏感資料
+requirements.txt  ← 安裝需要的套件清單
 
 ---
 
