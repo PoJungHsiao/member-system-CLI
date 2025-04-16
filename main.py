@@ -11,7 +11,7 @@ def register():
     # 密碼加密
     hash_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
     # 連線檢查資料庫內帳號是否存在
-    with pymysql.connect(database="member_system", **db_config) as conn, conn.cursor() as cursor:
+    with pymysql.connect(database=db_name, **db_config) as conn, conn.cursor() as cursor:
         sql = "SELECT * FROM users WHERE username = %s"
         cursor.execute(sql, (username,))
         result = cursor.fetchone()
@@ -32,7 +32,7 @@ def login():
     password = input("請輸入密碼 : ")
     # 檢查帳號密碼
     # 檢查帳號是否存在
-    with pymysql.connect(database="member_system", **db_config) as conn, conn.cursor() as cursor:
+    with pymysql.connect(database=db_name, **db_config) as conn, conn.cursor() as cursor:
         sql = "SELECT * FROM users WHERE username = %s"
         cursor.execute(sql, (username,))
         user = cursor.fetchone()
