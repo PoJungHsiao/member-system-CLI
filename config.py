@@ -12,7 +12,6 @@ db_config = {
     "port": int(os.getenv("DB_PORT")),
     "charset": "utf8mb4",
     "cursorclass": pymysql.cursors.DictCursor,
-    "autocommit": True
 }
 # 拿出資料庫名字(連線與資料庫名字分開較好指定資料庫)
 db_name = os.getenv("DB_NAME")
